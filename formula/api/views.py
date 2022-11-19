@@ -1,11 +1,11 @@
-from drf_spectacular.utils import (extend_schema_view, extend_schema, OpenApiParameter, OpenApiTypes,)
-from rest_framework import (viewsets, mixins, status,)
+from drf_spectacular.utils import extend_schema_view, extend_schema, OpenApiParameter, OpenApiTypes
+from rest_framework import viewsets, mixins, status
 from rest_framework.decorators import action
 from rest_framework.response import Response
 from rest_framework.authentication import TokenAuthentication
 from rest_framework.permissions import IsAuthenticated
-from formula.models import (Recipe, Tag, Ingredient,)
-from recipe import serializers
+from formula.models import Recipe, Tag, Ingredient
+from formula.api import serializers
 
 
 @extend_schema_view(
