@@ -4,6 +4,7 @@ production_media/
 static/
 production_static/
 templates/
+uploads/
 
 # Django #
 *.log
