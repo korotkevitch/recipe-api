@@ -1,9 +1,7 @@
 from unittest.mock import patch
 from decimal import Decimal
-
 from rest_framework.test import APITestCase
 from django.contrib.auth import get_user_model
-
 from formula import models
 
 
