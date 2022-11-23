@@ -12,10 +12,10 @@ services:
              python manage.py migrate &&
              python manage.py runserver 0.0.0.0:8000"
     environment:
-      - DB_HOST=db
-      - DB_NAME=recipe
-      - DB_USER=iko
-      - DB_PASS=887zKWFN
+      - DB_HOST=<your data>
+      - DB_NAME=<your data>
+      - DB_USER=<your data>
+      - DB_PASS=<your data>
     depends_on:
       - db
 
@@ -40,9 +40,9 @@ services:
     volumes:
       - dev-db-data:/var/lib/postgresql/data
     environment:
-      - POSTGRES_DB=recipe
-      - POSTGRES_USER=iko
-      - POSTGRES_PASSWORD=887zKWFN
+      - POSTGRES_DB=<your data>
+      - POSTGRES_USER=<your data>
+      - POSTGRES_PASSWORD=<your data>
 
 volumes:
   dev-db-data:
